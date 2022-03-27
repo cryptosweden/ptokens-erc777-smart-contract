@@ -54,7 +54,7 @@ const fixSignaturePerEIP155 = _signature => {
 /* eslint-disable-next-line no-return-assign */
 const silenceConsoleInfoOutput = _ =>
   /* eslint-disable-next-line no-empty-function */
-  console.info = __ => {}
+  {}
 
 const assertTransferEvent = (_events, _from, _to, _amount) => {
   const event = _events.find(_event => _event.event === 'Transfer')
